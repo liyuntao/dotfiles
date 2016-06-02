@@ -71,7 +71,7 @@ cmap w!! w !sudo tee %
 " Tab stuff
 set shiftwidth=4 tabstop=4 softtabstop=4 expandtab
 set autoindent
-
+set paste
 
 "----------------------------------------------
 " Search
