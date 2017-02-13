@@ -9,7 +9,7 @@ Python
 1. 如果是使用 requirements.txt 安装，则需要在 requirements.txt 头部放入下面的内容
 
     ```bash
-    -i http://pypi.douban.com/simple
+    -i https://pypi.douban.com/simple
     Flask==0.9
     Flask-Babel==0.8
     Flask-Login==0.1.3
@@ -24,7 +24,7 @@ Python
 2. 如果不使用 requirements.txt，则可以通过下面的命令安装
 
     ```bash
-    sudo pip install -v Flask -i http://pypi.douban.com/simple
+    sudo pip install -v Flask -i https://pypi.douban.com/simple
     ```
 
 3. (全局生效)Mac OS/Linux 修改 `~/.pip/pip.conf`
@@ -33,7 +33,8 @@ Python
     
     ```bash
    [global]
-   index-url = http://pypi.douban.com/simple
+   index-url = https://pypi.douban.com/simple
     ```
+    [配置参考](http://pip.readthedocs.io/en/latest/user_guide/#config-file)
 
 
