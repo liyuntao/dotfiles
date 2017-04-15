@@ -1,0 +1,9 @@
+version: "2"
+services:
+    ss-server:
+        image: spidertifa/ss-server:latest
+        ports:
+            - "443:8388"
+        restart: always
+        command: ./shadowsocks-server -c /shadowsocks/ss-config.json -k your_pwd_here start
+
