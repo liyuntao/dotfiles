@@ -3,7 +3,15 @@ services:
     ss-server:
         image: spidertifa/ss-server:latest
         ports:
-            - "443:8388"
+            - "443:8388/tcp"
+            - "443:8388/udp"
         restart: always
-        command: ./shadowsocks-server -c /shadowsocks/ss-config.json -k your_pwd_here start
-
+        command: ./shadowsocks-server -c /shadowsocks/ss-config.json -k your_ss_pwd start
+    kcp-server:
+        image: spidertifa/kcp-server:latest
+        ports:
+            - "your_kcp_port:38081/udp"
+        restart: always
+        depends_on:
+            - ss-server
+        command: ./server_linux_amd64 -t "ss-server:8388" -l ":38081" -mode fast2 --key your_kcp_key --crypt aes-128
