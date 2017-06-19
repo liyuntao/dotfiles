@@ -14,7 +14,7 @@ Android/Gradle
     # e.g.
     gradle --gradle-user-home=/drone/your_custom_cache
     ```
-    利用 gradle 可以修改 cache 目录的配置，将 cache 目录转移到/drone/ 下面缓存起来。
+    利用 gradle 可以修改 cache 目录位置的特性，将 cache 目录转移到/drone/ 下面缓存起来。
     这样既规避了 drone 的局限(cache 目录必须在 `/drone` 下面)，也省掉一个带缓存文件的二级 docker-base-image
 
     参考 http://mrhaki.blogspot.com/2010/09/gradle-goodness-changing-gradle-user.html
