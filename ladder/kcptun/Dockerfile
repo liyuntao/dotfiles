@@ -5,6 +5,6 @@ WORKDIR /kcptun
 RUN apk add --update curl && \
     rm -rf /var/cache/apk/*
 
-RUN curl -Lo kcptun.tar.gz https://github.com/xtaci/kcptun/releases/download/v20170329/kcptun-linux-amd64-20170329.tar.gz \
+RUN curl -Lo kcptun.tar.gz https://github.com/xtaci/kcptun/releases/download/v20170525/kcptun-linux-amd64-20170525.tar.gz \
 && tar -zxvf kcptun.tar.gz \
 && rm -f kcptun.tar.gz client_linux_amd64

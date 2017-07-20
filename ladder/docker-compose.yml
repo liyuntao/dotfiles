@@ -1,12 +1,13 @@
 version: "2"
 services:
     ss-server:
-        image: spidertifa/ss-server:latest
+        image: spidertifa/ss-server:0.2
         ports:
             - "443:8388/tcp"
             - "443:8388/udp"
         restart: always
-        command: ./shadowsocks-server -c /shadowsocks/ss-config.json -k your_ss_pwd start
+        METHOD: aes-256-gcm
+        PASSWORD: your_ss_pwd
     kcp-server:
         image: spidertifa/kcp-server:latest
         ports:
