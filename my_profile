@@ -1,0 +1,20 @@
+
+# 文件按大小排序，lbys = ls by size
+alias lbys='ls -alhS'
+# 文件按时间排序，lbyt = ls by time
+alias lbyt='ls -alht'
+#alias myip='curl ifconfig.co'
+alias myip='curl cip.cc'
+
+
+alias dps='docker ps'
+alias dpsa='docker ps -a'
+alias dcs='docker stats --no-stream $(docker ps --format={{.Names}})'
+
+alias dusort='du -md1 | sort -n'
+
+alias hp="export http_proxy=127.0.0.1:1087 && export https_proxy=127.0.0.1:1087"
+alias uhp="unset http_proxy https_proxy"
+
+alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
+alias setJdk9='export JAVA_HOME=$(/usr/libexec/java_home -v 9)'
