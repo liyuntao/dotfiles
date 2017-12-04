@@ -23,13 +23,12 @@ RUN set -ex && \
                                 build-base \
                                 curl \
                                 libev-dev \
-                                libtool \
                                 linux-headers \
                                 libsodium-dev \
                                 mbedtls-dev \
                                 pcre-dev \
                                 tar \
-                                udns-dev && \
+                                c-ares-dev && \
     cd /tmp && \
     curl -sSL $SS_URL | tar xz --strip 1 && \
     ./configure --prefix=/usr --disable-documentation && \
