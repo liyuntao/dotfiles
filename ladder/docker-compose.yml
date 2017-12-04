@@ -1,7 +1,7 @@
 version: "2"
 services:
     ss-server:
-        image: spidertifa/ss-server:0.2
+        image: spidertifa/ss-server:0.3
         ports:
             - "443:8388/tcp"
             - "443:8388/udp"
