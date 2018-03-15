@@ -22,6 +22,11 @@ iterm2终端: `profiles -> sessions -> 勾选 When idel, send ASCII code`
 ServerAliveInterval 60
 ```
 
+### SSH key authentication
+
+```bash
+ ssh-copy-id -i $HOME/.ssh/id_rsa.pub USER@192.168.1.198
+```
 
 ### docker pull images 加速
 
