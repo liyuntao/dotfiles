@@ -1,13 +1,14 @@
 version: "2"
 services:
     ss-server:
-        image: spidertifa/ss-server:0.3
+        image: shadowsocks/shadowsocks-libev
         ports:
             - "443:8388/tcp"
             - "443:8388/udp"
         restart: always
         METHOD: aes-256-gcm
         PASSWORD: your_ss_pwd
+        DNS_ADDR: 1.1.1.1
     kcp-server:
         image: spidertifa/kcp-server:latest
         ports:
