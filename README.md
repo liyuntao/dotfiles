@@ -41,4 +41,10 @@ ServerAliveInterval 60
 3. 阿里云
 4. proxychain (效果不佳)
 
+### 删除 mac os app 的数据
 
+```shell
+rm -rf ~/Library/Cache/<app package name>
+rm -rf ~/Library/Saved\ Application\ State/<app package name>
+rm -rf ~/Library/Application\ Support/<app package name>
+```
