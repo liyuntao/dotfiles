@@ -1,3 +1,19 @@
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+
+# mtr
+alias mtr="/usr/local/sbin/mtr"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+
 
 # 文件按大小排序，lbys = ls by size
 alias lbys='ls -alhS'
@@ -17,6 +33,6 @@ alias hp="export http_proxy=127.0.0.1:1087 && export https_proxy=127.0.0.1:1087"
 alias uhp="unset http_proxy https_proxy"
 
 alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
-alias setJdk9='export JAVA_HOME=$(/usr/libexec/java_home -v 9)'
+alias setJdk10='export JAVA_HOME=$(/usr/libexec/java_home -v 10)'
 
 alias gau="git add -u"
