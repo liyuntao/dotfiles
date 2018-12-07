@@ -33,6 +33,6 @@ alias hp="export http_proxy=127.0.0.1:1087 && export https_proxy=127.0.0.1:1087"
 alias uhp="unset http_proxy https_proxy"
 
 alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
-alias setJdk10='export JAVA_HOME=$(/usr/libexec/java_home -v 10)'
+alias setJdk11='export JAVA_HOME=$(/usr/libexec/java_home -v 11)'
 
 alias gau="git add -u"
