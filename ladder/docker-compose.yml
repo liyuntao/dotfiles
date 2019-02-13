@@ -6,9 +6,9 @@ services:
             - "443:8388/tcp"
             - "443:8388/udp"
         restart: always
-        METHOD: aes-256-gcm
+        METHOD: chacha20-ietf-poly1305
         PASSWORD: your_ss_pwd
-        DNS_ADDR: 1.1.1.1
+        # DNS_ADDR: 1.1.1.1
     kcp-server:
         image: spidertifa/kcp-server:latest
         ports:
