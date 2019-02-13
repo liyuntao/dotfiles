@@ -10,7 +10,7 @@ services:
         PASSWORD: your_ss_pwd
         # DNS_ADDR: 1.1.1.1
     kcp-server:
-        image: spidertifa/kcp-server:latest
+        image: spidertifa/kcp-server:20190109
         ports:
             - "your_kcp_port:38081/udp"
         restart: always
