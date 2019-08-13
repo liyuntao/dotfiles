@@ -31,15 +31,14 @@ ServerAliveInterval 60
 ### docker pull images 加速
 
 方式比较多
-
-1. DaoCloud加速器
+1. https://docs.docker.com/registry/recipes/mirror/
+2. DaoCloud加速器
   免费注册[DaoCloud](https://www.daocloud.io) 账号，进入[加速器页面](https://www.daocloud.io/mirror#accelerator-doc)
   按照提示操作，对于MacOS 打开顶部 docker图标-->Preferences-->Daemon-->Registry mirrors 添加加速器 url，然后 restart docker
   ![img01](./statics/docker01.png)
   ![img02](./statics/docker02.png)
-2. Http 代理
-3. 阿里云
-4. proxychain (效果不佳)
+3. Http 代理
+4. 阿里云
 
 ### 删除 mac os app 的数据
 
