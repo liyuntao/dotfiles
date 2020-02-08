@@ -15,7 +15,7 @@ Java
 ```
 
 
-e.g. mac os 先从安装包中 copy 配置模板
+示例: 先从 maven 安装包中 copy 配置模板到用户目录（Mac OS）
 ```
 brew list maven
 cp /usr/local/Cellar/maven/3.6.3/libexec/conf/ ~/.m2/
