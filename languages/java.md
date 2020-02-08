@@ -4,7 +4,7 @@ Java
 直接使用阿里的 Maven 镜像源
 
 ```bash
-<mirrors>
+  <mirrors>
     <mirror>
       <id>alimaven</id>
       <name>aliyun maven</name>
@@ -12,4 +12,12 @@ Java
       <mirrorOf>central</mirrorOf>        
     </mirror>
   </mirrors>
+```
+
+
+e.g. mac os 先从安装包中 copy 配置模板
+```
+brew list maven
+cp /usr/local/Cellar/maven/3.6.3/libexec/conf/ ~/.m2/
+vim ~/.m2/settings.xml
 ```
