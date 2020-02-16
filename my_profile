@@ -25,6 +25,7 @@ alias myip='curl cip.cc'
 
 alias dps='docker ps'
 alias dpsa='docker ps -a'
+alias dcps='docker-compose ps'
 alias dcs='docker stats --no-stream $(docker ps --format={{.Names}})'
 
 alias dusort='du -md1 | sort -n'
@@ -33,6 +34,10 @@ alias hp="export http_proxy=127.0.0.1:1087 && export https_proxy=127.0.0.1:1087"
 alias uhp="unset http_proxy https_proxy"
 
 alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
-alias setJdk11='export JAVA_HOME=$(/usr/libexec/java_home -v 11)'
+alias setJdk13='export JAVA_HOME=$(/usr/libexec/java_home -v 13)'
 
 alias gau="git add -u"
+
+alias kccc="kubectl config current-context"
+
+if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
