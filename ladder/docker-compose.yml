@@ -10,10 +10,10 @@ services:
         PASSWORD: your_ss_pwd
         # DNS_ADDR: 1.1.1.1
     kcp-server:
-        image: spidertifa/kcp-server:20190109
+        image: xtaci/kcptun:v20200226
         ports:
             - "your_kcp_port:38081/udp"
         restart: always
         depends_on:
             - ss-server
-        command: ./server_linux_amd64 -t "ss-server:8388" -l ":38081" -mode fast2 --key your_kcp_key --crypt aes-128
+        command: /bin/server -t "ss-server:8388" -l ":38081" -mode fast2 --key your_kcp_key --crypt aes-128
