@@ -2,8 +2,8 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
-export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
-export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
+# export RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
+# export RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
 # mtr
 alias mtr="/usr/local/sbin/mtr"
@@ -14,14 +14,13 @@ export NVM_DIR="$HOME/.nvm"
 
 
 
-
+alias l="ls -lha"
 # 文件按大小排序，lbys = ls by size
 alias lbys='ls -alhS'
 # 文件按时间排序，lbyt = ls by time
 alias lbyt='ls -alht'
 #alias myip='curl ifconfig.co'
 alias myip='curl cip.cc'
-
 
 alias dps='docker ps'
 alias dpsa='docker ps -a'
@@ -37,10 +36,3 @@ alias setJdk8='export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)'
 alias setJdk13='export JAVA_HOME=$(/usr/libexec/java_home -v 13)'
 
 alias gau="git add -u"
-
-alias kccc="kubectl config current-context"
-
-alias k=kubectl
-complete -F __start_kubectl k
-
-if [ /usr/local/bin/kubectl ]; then source <(kubectl completion zsh); fi
