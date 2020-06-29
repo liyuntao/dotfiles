@@ -13,18 +13,22 @@ Scala
     vim ~/.sbt/repositories
     ```
 
-3. copy 默认配置，按需插入私有的 nexus url：
+3. copy 默认配置，按需插入私有的 nexus url
 
-    ```bash
+```console
+
 [repositories]
   local
   local-preloaded-ivy: file:///${sbt.preloaded-${sbt.global.base-${user.home}/.sbt}/preloaded/}, [organization]/[module]/[revision]/[type]s/[artifact](-[classifier]).[ext]
   local-preloaded: file:///${sbt.preloaded-${sbt.global.base-${user.home}/.sbt}/preloaded/}
   maven-central
   typesafe-ivy-releases: https://repo.typesafe.com/typesafe/ivy-releases/, [organization]/[module]/[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
-sbt-ivy-snapshots: https://repo.scala-sbt.org/scalasbt/ivy-snapshots/, [organization]/[module]/[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
-    ```
-1. 配置sbt，使它仅使用`~/.sbt/repositories`中的内容。
+  sbt-ivy-snapshots: https://repo.scala-sbt.org/scalasbt/ivy-snapshots/, [organization]/[module]/[revision]/[type]s/[artifact](-[classifier]).[ext], bootOnly
+
+```
+
+
+4. 配置sbt，使它仅使用`~/.sbt/repositories`中的内容。
   * 如果你使用命令行，请在sbt命令行参数中添加 `-Dsbt.override.build.repos=true` 。例如我的sbt shell脚本的内容是这样的：
 
           #!/bin/sh
